@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="BJHomeNavView">
+            <rect key="frame" x="0.0" y="0.0" width="185" height="90"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="JhM-PV-MgF">
+                    <rect key="frame" x="69" y="10" width="48" height="48"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="JhM-PV-MgF" secondAttribute="height" multiplier="1:1" id="iF0-GX-iXE"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TZO-X0-yCG">
+                    <rect key="frame" x="0.0" y="58" width="185" height="22"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="22" id="NuR-GT-vYY"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="TZO-X0-yCG" secondAttribute="trailing" id="0SC-zt-AzF"/>
+                <constraint firstItem="TZO-X0-yCG" firstAttribute="top" secondItem="JhM-PV-MgF" secondAttribute="bottom" id="6yx-wC-75u"/>
+                <constraint firstItem="TZO-X0-yCG" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="LM1-ry-LL7"/>
+                <constraint firstItem="JhM-PV-MgF" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="QfG-eb-dAF"/>
+                <constraint firstAttribute="bottom" secondItem="TZO-X0-yCG" secondAttribute="bottom" constant="10" id="gTB-pv-CZc"/>
+                <constraint firstItem="JhM-PV-MgF" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="ws1-fc-tas"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="icon" destination="JhM-PV-MgF" id="bzz-vG-O2J"/>
+                <outlet property="title" destination="TZO-X0-yCG" id="pJu-Qe-pw6"/>
+            </connections>
+            <point key="canvasLocation" x="228.5" y="198.5"/>
+        </view>
+    </objects>
+</document>
